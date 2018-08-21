@@ -12,3 +12,19 @@ install:
 
 script:
   - python -c 'import gdcm'
+  - conda install -y pytest
+  - python -c 'import gdcm'
+  - conda install -y mock
+  - python -c 'import gdcm'
+  - conda install -y requests
+  - python -c 'import gdcm'
+  - conda install -y numpy
+  - python -c 'import gdcm'
+  - conda install -y scipy
+  - python -c 'import gdcm'
+  - conda install -y matplotlib
+  - python -c 'import gdcm'
+  - conda install -y pandas
+  - python -c 'import gdcm'
+  - conda install -y -c glueviz glue-core
+  - python -c 'import gdcm'
