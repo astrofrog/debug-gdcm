@@ -7,24 +7,9 @@ install:
   - wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
   - bash miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
-  - conda create -y -n test -c conda-forge python=3.5 gdcm
+  - conda create -y -n test python=3.5
   - source activate test
 
 script:
-  - python -c 'import gdcm'
-  - conda install -y pytest
-  - python -c 'import gdcm'
-  - conda install -y mock
-  - python -c 'import gdcm'
-  - conda install -y requests
-  - python -c 'import gdcm'
-  - conda install -y numpy
-  - python -c 'import gdcm'
-  - conda install -y scipy
-  - python -c 'import gdcm'
-  - conda install -y matplotlib
-  - python -c 'import gdcm'
-  - conda install -y pandas
-  - python -c 'import gdcm'
-  - conda install -y -c glueviz glue-core
+  - conda install -y -c conda-forge gdcm
   - python -c 'import gdcm'
