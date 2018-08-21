@@ -12,4 +12,5 @@ install:
 
 script:
   - conda install -y -c conda-forge gdcm
+  - conda list
   - python -c 'import gdcm'
