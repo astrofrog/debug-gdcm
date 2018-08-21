@@ -8,6 +8,7 @@ install:
   - bash miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
   - conda create -y -n test -c conda-forge python=3.5 gdcm
+  - source activate test
 
 script:
   - python -c 'import gdcm'
