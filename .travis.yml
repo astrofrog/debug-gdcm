@@ -14,3 +14,29 @@ script:
   - conda install -y -c conda-forge gdcm
   - conda list
   - python -c 'import gdcm'
+  - conda install -y zlib
+  - python -c 'import gdcm'
+  - conda install -y libcxx
+  - python -c 'import gdcm'
+  - conda install -y libcxxabi
+  - python -c 'import gdcm'
+  - conda install -y libedit
+  - python -c 'import gdcm'
+  - conda install -y libffi
+  - python -c 'import gdcm'
+  - conda install -y ncurses
+  - python -c 'import gdcm'
+  - conda install -y readline
+  - python -c 'import gdcm'
+  - conda install -y setuptools
+  - python -c 'import gdcm'
+  - conda install -y sqlite
+  - python -c 'import gdcm'
+  - conda install -y tk
+  - python -c 'import gdcm'
+  - conda install -y tk
+  - python -c 'import gdcm'
+  - conda install -y wheel
+  - python -c 'import gdcm'
+  - conda install -y xz
+  - python -c 'import gdcm'
